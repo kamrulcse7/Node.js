@@ -1,0 +1,19 @@
+{
+  "name": "external_module_npm",
+  "version": "1.0.0",
+  "description": "npm test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "node.js"
+  ],
+  "author": "Kamrul Hasan",
+  "license": "ISC",
+  "dependencies": {
+    "movies-names": "^1.1.1",
+    "random-fruits-name": "^1.9.6"
+  }
+}
