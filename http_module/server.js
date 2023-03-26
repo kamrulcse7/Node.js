@@ -17,7 +17,8 @@ const hostname = '127.0.0.1';
 
 //or
 const server = http.createServer((req, res) => {
-    res.end("Hello Bangladesh");
+    // res.end("Hello Bangladesh");
+    res.end("<h1>Hello Bangladesh</h1>");
 });
 server.listen(port, hostname, ()=>{
     console.log(`server is running successfully at http://${hostname}:${port}`);
