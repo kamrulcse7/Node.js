@@ -14,8 +14,9 @@
 
 
 // we can use only pc userInfo then apply this way
-// const {userInfo} = require("os");
+// const {userInfo, totalmem} = require("os");
 // console.log(userInfo());
+// console.log(totalmem());
 
 // path //
 const path = require("path");
