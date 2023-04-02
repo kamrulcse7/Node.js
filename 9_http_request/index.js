@@ -17,16 +17,25 @@ app.get("/student", (req, res) => {
     // const name = req.query.name;
     // const age = req.query.age;
     //or
-    const {id, name, age} = req.query;
+    const { id, name, age } = req.query;
     res.send(`Id: ${id}, Name: ${name}, Age: ${age}`)
 });
 
 //routes parameter
 // http://localhost:3001/id/37/name/kamrul
-app.get("/id/:id/name/:name", (req, res)=>{
+app.get("/id/:id/name/:name", (req, res) => {
     const id = req.params.id;
     const name = req.params.name;
     res.send(`Id: ${id}, name: ${name}`)
+})
+
+
+// get data from header 
+
+app.get("/get_data_from_header", (req, res) => {
+    const id = req.header('id');
+    const name = req.header('name');
+    res.send(`id: ${id}, name: ${name}`)
 })
 
 
